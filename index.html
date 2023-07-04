@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            const { google } = require('googleapis');
+        </script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>PDV - AUTOMATIZE | Pagina Login</title>
+    </head>
+    <body> 
+        <div class="usavel">
+            <div class="container">
+                <div class="imglabel">
+                    <img src="robot.png" alt="Imagem do robô" id="robot-image">
+                </div>
+                <br>
+                <div class="usuariolabel">
+                    <label id = "usuariolabe">Login</label>
+                </div>
+                <br>
+                <input type="text" id = "login" placeholder="Digite seu Usuário"/>
+                <br>
+                <button id="ajuda">Precisa de ajuda?</button>
+            </div>
+            <br>
+            <div>
+                <button type="submit" id = "botao1" onclick="Sheets()">Entrar</button>
+            </div>
+            <div>
+                <span id = "statusPassword"></span>
+            </div>
+        </div>
+        <div class="image-container">
+        </div>
+    </body>
+    <script src="E:\electron\src\script.js"></script>
+    
+</html>

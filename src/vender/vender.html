@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        const { google } = require('googleapis');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>PDV - AUTOMATIZE | ESTOQUE</title>
+</head>
+<body>
+  <!-- Menu de navegação no topo da página -->
+  <nav>
+    <ul>
+      <li><a href="#">Abrir chamado</a></li>
+      <li><a href="#">Ajuda</a></li>
+      <li id = "voltar" class="sair"><a onclick="voltar()">Voltar</a></li>
+      <li id = "sair" class="sair"><a onclick="sair()">Sair</a></li>
+    </ul>
+  </nav>
+  <div>
+    <label >Quantidade</label>
+    <input id = "qtdprodutos" type="number" placeholder="Quantidade">
+    <br>
+    <label>Código do produto</label>
+    <input type="number" id="codigoprod" placeholder="Digite">
+  </div>
+  <div>
+    <button id="adicionar" onclick="adicionarProduto()">Adicionar</button>
+  </div>
+  <div id="modeloContainer" style="display: none;">
+    <label for="valordesconto">Valor do desconto:</label>
+    <input type="text" id="valordesconto">
+    <button id="enviardesconto">Enviar desconto</button>
+  </div>
+
+  <!-- Valor vendido no dia na parte inferior da página -->
+  <div id = "sacola_atual">
+  </div>
+  <div class="valor-vendido" id="valor_atual">
+  </div>
+  <div class="image-container">
+    <img src="E:\electron\robot.png" alt="Imagem do robô" id="robot-image">
+</div>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+      itensSacola();
+      valorAtual();
+    });
+  </script>
+</body>
+    <script src="E:\electron\src\script.js"></script>
+</html>

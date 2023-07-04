@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        const { google } = require('googleapis');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>PDV - AUTOMATIZE | Menu</title>
+</head>
+<body>
+  <!-- Ícones de menus de PDV no centro da página -->
+  <div class="faixa-preta">
+    <div class="colunas">
+      <div class="coluna">
+        <button class="tooltip-btn" data-tooltip="V - Vender" id = "botao_vender"  onclick="JanelaVender()"><img src="images/loja-online.png"></button>
+        <button class="tooltip-btn" data-tooltip="Estoque - F2"><img src="images/comprar.png"></button>
+        <button class="tooltip-btn" data-tooltip="Cadastrar Cupom - F3"><img src="images/cupom.png"></button>
+      </div>
+      <div class="coluna">
+        <button class="tooltip-btn" data-tooltip="Cadastro Cliente - F4"><img src="images/perfil.png"></button>
+        <button class="tooltip-btn" data-tooltip="Abrir chamado - F5"><img src="images/loja.png"></button>
+        <button class="tooltip-btn" data-tooltip="Configurações - F5"><img src="images/configuracoes.png"></button>
+    </div>
+  </div>
+  <div class="primeira_opt">
+    <button id = "sair_botao" class="tooltip-btn" data-tooltip="Q - Sair" onclick="sair()"><img src="images/desmarcado.png"></button>
+  </div>
+</div>
+
+  <!-- Valor vendido no dia na parte inferior da página -->
+  <div class="valor-vendido">
+    Valor Vendido no Dia: R$ 0,00
+  </div>
+  <div class="image-container">
+    <img src="E:\electron\robot.png" alt="Imagem do robô" id="robot-image">
+</div>
+</body>
+    <script src="E:\electron\src\script.js"></script>
+</html>

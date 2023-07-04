@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .usavel {
+    margin-top: 20%;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Define a cor de fundo com transparência */
+    padding: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .usuariolabel {
+    text-align: left;
+    align-items: left;
+  }
+
+  .imglabel {
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top:10px;
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    margin-top: 30px;
+  }
+  
+  #login::placeholder{
+    color:grey;
+  }
+
+  #login:hover::placeholder {
+    color:lightgrey;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-family:Oatmeal,sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color:black;
+  }
+  
+ #usuariolabe{
+    font-family:'Oatmeal',sans-serif;
+    font-size: 15px;
+ }
+
+  #botao1 {
+    font-family:Oatmeal,sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #ajuda{
+    font-family:Oatmeal,sans-serif;
+    display: block;
+    width: fit-content;
+    border: none;
+    color: #000000;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .image-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#robot-image {
+  width: 300px;
+}
+
+.image-caption {
+  font-family:Oatmeal,sans-serif;
+  margin-left: 1px;
+  color: black;
+  font-size: 14px;
+}
